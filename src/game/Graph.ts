@@ -7,12 +7,12 @@ export class Graph {
     this.nodes = [];
   }
 
-  addNode(id: string): Node {
+  addNode(id: string, x: number = 0, y: number = 0): Node {
     const existing = this.getNode(id);
     if (existing) {
       return existing;
     }
-    const node = new Node(id);
+    const node = new Node(id, x, y);
     this.nodes.push(node);
     return node;
   }
