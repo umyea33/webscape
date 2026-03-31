@@ -5,10 +5,10 @@ export class Graph {
   public width: number;
   public height: number;
 
-  constructor(width: number, height: number) {
+  constructor() {
     this.nodes = [];
-    this.width = width;
-    this.height = height;
+    this.width = 0;
+    this.height = 0;
   }
 
   addNode(id: string, x: number = 0, y: number = 0): Node {
