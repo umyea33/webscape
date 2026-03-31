@@ -1,0 +1,75 @@
+{
+  "level": 1,
+  "graph": {
+    "width": 800,
+    "height": 700,
+    "nodes": [
+      {
+        "id": "center",
+        "x": 400,
+        "y": 350,
+        "neighbors": ["corner0", "corner1", "corner2", "corner3", "corner4"]
+      },
+      {
+        "id": "point0",
+        "x": 400,
+        "y": 50,
+        "neighbors": ["center"]
+      },
+      {
+        "id": "point1",
+        "x": 685,
+        "y": 257,
+        "neighbors": ["center"]
+      },
+      {
+        "id": "point2",
+        "x": 576,
+        "y": 593,
+        "neighbors": ["center"]
+      },
+      {
+        "id": "point3",
+        "x": 224,
+        "y": 593,
+        "neighbors": ["center"]
+      },
+      {
+        "id": "point4",
+        "x": 115,
+        "y": 257,
+        "neighbors": ["center"]
+      },
+      {
+        "id": "corner0",
+        "x": 471,
+        "y": 253,
+        "neighbors": ["point0", "point1"]
+      },
+      {
+        "id": "corner1",
+        "x": 514,
+        "y": 387,
+        "neighbors": ["point1", "point2"]
+      },
+      {
+        "id": "corner2",
+        "x": 400,
+        "y": 470,
+        "neighbors": ["point2", "point3"]
+      },
+      {
+        "id": "corner3",
+        "x": 286,
+        "y": 387,
+        "neighbors": ["point3", "point4"]
+      },
+      {
+        "id": "corner4",
+        "x": 329,
+        "y": 253,
+        "neighbors": ["point4", "point0"]
+      }
+    ]
+  }
+}
