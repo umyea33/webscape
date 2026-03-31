@@ -2,9 +2,13 @@ import { Node } from './Node';
 
 export class Graph {
   public nodes: Node[];
+  public width: number;
+  public height: number;
 
-  constructor() {
+  constructor(width: number, height: number) {
     this.nodes = [];
+    this.width = width;
+    this.height = height;
   }
 
   addNode(id: string, x: number = 0, y: number = 0): Node {
